@@ -5,33 +5,49 @@
     <style>
         body {
             font-family: Verdana, Arial, Helvetica, sans-serif;
-            display: flex;
-            justify-content: center;
-            margin-top: 50px;
-            
+            margin: 0;
         }
 
+        /* NAVIGATION BAR */
+        nav {
+            background-color: #333;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: skyblue;
+        }
+
+        /* CONTAINER */
         .container {
             width: 450px;
             border: 2px solid black;
             padding: 20px;
-            background-color: aliceblue
+            background-color: aliceblue;
+            margin: 50px auto;
         }
 
         h1 {
             text-align: center;
         }
 
-       .top-section {
-        display: flex;
-       gap: 15px;   
-}
+        .top-section {
+            display: flex;
+            gap: 15px;   
+        }
 
         .photo {
             width: 100px;
             height: 100px;
             border: 2px solid skyblue;
-            margin-right: 11px;
         }
 
         .information p {
@@ -40,7 +56,7 @@
             padding-bottom: 5px;
         }
 
-        .bio-information {
+        .BIT-info {
             margin-top: 20px;
             border-top: 2px solid black;
             padding-top: 15px;
@@ -49,30 +65,35 @@
 </head>
 <body>
 
+<!-- NAVBAR -->
+<nav>
+    <a href="index.html">Home</a>
+    <a href="profile.html">Profile</a>
+    <a href="quiz.html">Quiz/Activity</a>
+    <a href="exam.html">Exam</a>
+</nav>
+
 <div class="container">
     <h1>HTML</h1>
 
     <div class="top-section">
-      <img src="tolibas022.jpg" width="120" height="120"> 
-
+        <img src="micha.jpg" width="120" height="120">
 
         <div class="information">
-            <p><strong>Name: Tolibas, Michaela P.</p>
-            <p><strong>Student Nummber:</strong> 251100735</p>
-            <p><strong>Course & Section: </strong> 1st Bachelor of Science in Computer Science 1B </p>
-            
+            <p><strong>Name:</strong> Tolibas, Michaela P.</p>
+            <p><strong>Course:</strong> Bachelor of Science in Computer Science</p>
+            <p><strong>Section:</strong> 1B</p>
         </div>
     </div>
 
-    <div class="BIT-info ">
-            <h3>BIT Info</h3>
-    <p>Here's the brief summary about me:</p>
-    <ol>
-        <li>Currently studying BSCS</li>
-      <li>Learning web development (HTML,CSS,JavaScript)</li>
-      <li>Interested in programming and technology</li>
-    </ol>
-        </p>
+    <div class="BIT-info">
+        <h3>BIT Info</h3>
+        <p>Here's the brief summary about me:</p>
+        <ol>
+            <li>Currently studying BSCS</li>
+            <li>Learning web development (HTML, CSS, JavaScript)</li>
+            <li>Interested in programming and technology</li>
+        </ol>
     </div>
 
 </div>
